@@ -1,0 +1,16 @@
+.myInstructionText{
+    display: block;
+}
+
+.mmybtnIngredient:active .myInstructionText{
+    display: none;
+}
+.mmybtnIngredient:active .myIngredientText{
+    display: block;
+}
+.mybtnInstruction:active .myInstructionText{
+    display: block;
+}
+.myIngredientText{
+    display: none;
+}

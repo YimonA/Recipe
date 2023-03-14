@@ -1,0 +1,12 @@
+.myParent{
+    transition: 1s;
+}
+.myParent:hover .myIcon{
+    display: flex;
+}
+.myIcon{
+    display: none;
+}
+.myParent:hover .myImage{
+    opacity: 0.6;
+}

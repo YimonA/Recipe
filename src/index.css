@@ -1,0 +1,16 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300;400&family=Outfit:wght@300;400&display=swap');
+
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: "Nunito",sans-serif;
+  }
+  h1,h2,h3{
+    font-family: "Outfit",sans-serif;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
