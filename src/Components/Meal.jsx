@@ -23,11 +23,17 @@ const Meal = () => {
   };
   return (
     <div className="bg-base-200">
-      <div className={`${icon? "block" : "hidden"}`}>
-
-        <AiOutlineLoading className={`p-2 animate-spin h-16 w-16 mx-auto my-24 `}  />
+      <div
+        className={`${
+          icon ? "block" : "hidden"
+        } flex flex-col duration-700 justify-center items-center h-screen my-auto`}
+      >
+        <AiOutlineLoading
+          className={`p-2 animate-spin h-16 w-16 text-indigo-400`}
+        />
+        <h3 className=" text-xl my-14">Loading</h3>
       </div>
-      
+
       <div className=" flex flex-wrap gap-10 justify-center align-center pb-20 pt-24">
         {products?.map((product) => {
           return (

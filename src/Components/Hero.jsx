@@ -25,13 +25,13 @@ const Hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse px-10 my-6">
           <img
             src={recipe.strMealThumb}
-            className="w-[350px] h-[350px] lg:max-w-sm rounded-full shadow-2xl object-cover mx-6" loading="lazy"
+            className="w-[350px] h-[350px] rounded-full shadow-2xl object-cover mx-6" loading="lazy"
           />
           <div>
             <h1 className="lg:text-6xl sm:text-3xl font-bold mb-4">
               {recipe.strMeal}
             </h1>
-            <p className=" max-h-28 text-justify text-clip lg:indent-24 indent-3 overflow-hidden mb-6">
+            <p className=" max-h-48 text-justify text-clip lg:indent-24 indent-3 overflow-hidden mb-6">
               {recipe.strInstructions}
             </p>
 
