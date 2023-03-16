@@ -7,9 +7,9 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className=" container mx-auto flex flex-wrap justify-around items-center pb-16 pt-24 px-4 bg-base-200">
+    <div className=" container mx-auto flex flex-wrap grow h-screen justify-around items-center pb-16 pt-24 px-4 bg-base-200">
       
-      <div className="flex flex-col justify-around gap-5 items-center w-full lg:w-[45%] mt-4 h-[550px]">
+      <div className="flex flex-col justify-around gap-5 items-center w-full lg:w-[45%] mt-4 ">
         <div className="flex flex-col w-full">
           <h3 className="text-2xl lg:text-4xl text-extrabold text-center mb-4">Sign up for the newsletters</h3>
           <div className=" my-4 mx-auto">

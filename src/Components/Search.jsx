@@ -19,9 +19,9 @@ const Search = () => {
     setItem(meals[0]);
   };
   return (
-  <div className=" container mx-auto ">
-    <div className="flex flex-wrap justify-center items-center gap-10  pb-16  bg-base-200 pt-24">
-    <img className=" w-[400px] rounded-lg px-4" src={item.strMealThumb} alt="" />
+  <div className=" container mx-auto bg-base-200">
+    <div className="flex flex-wrap grow lg:h-screen justify-center items-center gap-10  pb-16   pt-24">
+    <img className=" w-[400px] rounded-lg px-4 h-[400px]" src={item.strMealThumb} loading="lazy" alt="" />
     <div className="w-full lg:w-[45%]">
       <h1 className=" text-extrabold my-2 text-2xl px-3">{item.strMeal} - {item.strCategory}</h1>
       

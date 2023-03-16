@@ -17,7 +17,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=' container mx-auto h-screen'>
+    <div className=' container mx-auto flex flex-col grow bg-slate-200 h-full '>
       <Nav/>
       <Routes>
         <Route path='/' element={<Hero/>}></Route>

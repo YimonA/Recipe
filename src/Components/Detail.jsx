@@ -47,28 +47,25 @@ const Detail = () => {
   }
     
   return (
-    <div className=" flex flex-wrap justify-around gap-6 items-center pt-24 pb-16 bg-base-200">
-      <img className=" w-[350px] lg:w-[500px] rounded-lg pt-4" src={recipe.strMealThumb} alt="" />
+    <div className=" container mx-auto flex flex-wrap grow lg:h-screen justify-around gap-6 items-center pt-24 pb-24 bg-base-200">
+      <img className=" w-[350px] h-[350px] lg:w-[500px] rounded-lg pt-4" src={recipe.strMealThumb} alt="" />
 
       <div className=" w-[100%] lg:w-[50%] p-2 my-1 px-6">
         <h3 className=" text-3xl text-gray-600 font-semibold tracking-wide my-3">
           {recipe.strMeal}
         </h3>
         <h3 className=" text-2xl text-gray-600 font-semibold tracking-wide mb-2">
-          {recipe.strCategory}
-        </h3>
-        <h3 className=" text-2xl text-gray-600 font-semibold tracking-wide mb-4">
-          {recipe.strArea}
+          {recipe.strCategory} - {recipe.strArea}
         </h3>
         <a href={recipe.strYoutube}>
           <BsYoutube className="text-4xl text-red-500 my-4" />
         </a>
         <button onClick={ checkInstruction} className={` bg-indigo-500 px-6 py-1 text-white rounded shadow mr-2 mb-2`}  >Instruction</button>
         <button onClick={ checkIngredient} className={`  bg-indigo-500 px-6 py-1 text-white rounded shadow mr-2`} >Ingredients</button>
-        <p className={` ${instruction ? "block": "hidden"} text-gray-500 tracking-wide leading-8 my-4 text-clip text-justify lg:indent-24 indent-6 `} >
+        <p className={` ${instruction ? "block": "hidden"} text-gray-500 tracking-wide leading-8 my-4 text-justify lg:indent-24 indent-6 `} >
           {recipe.strInstructions}
         </p>
-        <div className={`${ ingredient ? "border-4 border-indigo-400 p-4 my-4 md:w-[50%] ":""} `}>
+        <div className={`${ ingredient ? "border-4 border-indigo-400 p-4 pb-24 mt-4 md:w-[50%] ":""} `}>
         {ingre?.map((item) => {
           return (
             <div key={item.id} className={`${ ingredient ? "block":"hidden"} p-1`}>

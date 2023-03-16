@@ -10,7 +10,7 @@ const Card = ({ product }) => {
   return (
     <div>
       <div className=" relative myParent">
-        <img className="myImage w-[300px] rounded-lg" src={strMealThumb} alt="" />
+        <img className="myImage w-[300px] rounded-lg h-[300px]" loading="lazy" src={strMealThumb} alt="" />
         <div className="myIcon absolute top-[45%] left-[45%]">
           <Link to={`/detail/${idMeal}`}>
             <p className="   bg-indigo-500 w-12 h-12 rounded-[100%] flex justify-center items-center">
