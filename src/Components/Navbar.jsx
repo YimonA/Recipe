@@ -38,9 +38,9 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 "
             >
-              <li>
+              <li className="">
               <NavLink to={"/"} >
                 Home
                 </NavLink>
@@ -65,7 +65,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to={"/"}>
-            <CiForkAndKnife className=" text-3xl"></CiForkAndKnife>
+            <CiForkAndKnife className=" text-3xl text-black font-extrabold"></CiForkAndKnife>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

@@ -14,7 +14,7 @@ const About = () => {
           <h1 className=" text-extrabold mb-4 text-2xl text-center">
             Our Story
           </h1>
-          <p className=" text-justify lg:indent-24 indent-6 p-3">
+          <p className=" text-justify leading-8 p-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
             fugit repudiandae unde. Modi et deleniti cupiditate vitae facilis,
             consequatur velit nemo perspiciatis voluptates totam similique
@@ -28,7 +28,7 @@ const About = () => {
           <h1 className="text-extrabold mb-4 text-2xl text-center">
             Our Mission
           </h1>
-          <p className=" text-justify lg:indent-24 indent-6 p-3">
+          <p className=" text-justify leading-8 p-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
             fugit repudiandae unde. Modi et deleniti cupiditate vitae facilis,
             consequatur velit nemo perspiciatis voluptates totam similique
@@ -42,7 +42,7 @@ const About = () => {
           <h1 className="text-extrabold mb-4 text-2xl text-center">
             Our Vision
           </h1>
-          <p className=" text-justify lg:indent-24 indent-6 p-3">
+          <p className=" text-justify leading-8 p-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
             fugit repudiandae unde. Modi et deleniti cupiditate vitae facilis,
             consequatur velit nemo perspiciatis voluptates totam similique

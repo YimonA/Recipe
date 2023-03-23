@@ -22,16 +22,17 @@ const Hero = () => {
   return (
     <div className=" border-box bg-base-200 pt-24 pb-16 ">
       <div className="container mx-auto hero ">
-        <div className="hero-content flex-col lg:flex-row-reverse px-10 my-6">
+        <div className="hero-content flex-col lg:flex-row-reverse px-10 lg:gap-20 my-6">
           <img
             src={recipe.strMealThumb}
-            className="w-[350px] h-[350px] rounded-full shadow-2xl object-cover mx-6" loading="lazy"
+            className="w-[350px] h-[350px] rounded-full shadow-2xl object-cover mx-6"
+            loading="lazy"
           />
           <div>
-            <h1 className="lg:text-6xl sm:text-3xl font-bold mb-4">
+            <h1 className="lg:text-6xl sm:text-3xl lg:tracking-wide font-bold mb-4 tracking-wide">
               {recipe.strMeal}
             </h1>
-            <p className=" max-h-48 text-justify text-clip lg:indent-24 indent-3 overflow-hidden mb-6">
+            <p className=" max-h-48 text-justify text-clip leading-8 overflow-hidden mb-6">
               {recipe.strInstructions}
             </p>
 
@@ -39,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <Random/>
+      <Random />
       <div className=" container mx-auto flex justify-center py-4 mb-4">
         <Link to={"/meal"} element={<Meal />}>
           <button className="btn btn-outline btn-primary">All Recipes</button>

@@ -8,5 +8,7 @@
     display: none;
 }
 .myParent:hover .myImage{
+    transform: scale(1.25);
+    transition: 1s;
     opacity: 0.6;
 }

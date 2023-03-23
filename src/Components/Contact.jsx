@@ -36,7 +36,7 @@ const Contact = () => {
           <h1 className="text-xl text-center mb-4">Follow us on</h1>
           <div className=" flex justify-around items-center mx-auto">
             <BsTwitter className=" text-blue-400 text-2xl sm:text-md mx-8" />
-            <BsYoutube className=" text-red-400 text-2xl sm:text-md mr-8" />
+            <BsYoutube className=" text-red-600 bg-white text-2xl sm:text-md mr-8" />
             <FaFacebookF className=" text-blue-700 text-2xl sm:text-md mr-8" />
           </div>
         </div>

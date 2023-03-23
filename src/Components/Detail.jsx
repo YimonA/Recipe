@@ -58,11 +58,11 @@ const Detail = () => {
           {recipe.strCategory} - {recipe.strArea}
         </h3>
         <a href={recipe.strYoutube}>
-          <BsYoutube className="text-4xl text-red-500 my-4" />
+          <BsYoutube className="text-4xl text-red-600 bg-white my-4" />
         </a>
         <button onClick={ checkInstruction} className={` bg-indigo-500 px-6 py-1 text-white rounded shadow mr-2 mb-2`}  >Instruction</button>
         <button onClick={ checkIngredient} className={`  bg-indigo-500 px-6 py-1 text-white rounded shadow mr-2`} >Ingredients</button>
-        <p className={` ${instruction ? "block": "hidden"} text-gray-500 tracking-wide leading-8 my-4 text-justify lg:indent-24 indent-6 sm:max-h-96`} >
+        <p className={` ${instruction ? "block": "hidden"} text-gray-500 tracking-wide leading-8 my-4 text-justify sm:max-h-96`} >
           {recipe.strInstructions}
         </p>
         <div className={`${ ingredient ? "border-4 border-indigo-400 p-4 pb-24 mt-4 md:w-[50%] ":""} `}>

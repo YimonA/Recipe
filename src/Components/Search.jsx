@@ -26,7 +26,7 @@ const Search = () => {
       <h1 className=" text-extrabold my-2 text-2xl px-3">{item.strMeal} - {item.strCategory}</h1>
       
       <h3 className=" text-bold my-4 text-lg  px-3">Source <span className="text-blue-400">- <a href={item.strSource} >  {item.strSource}</a></span></h3>
-      <p className=" text-justify lg:indent-24 indent-3 p-3">{item.strInstructions}</p>
+      <p className=" text-justify leading-8 p-3">{item.strInstructions}</p>
     </div>
     </div>
   </div>
