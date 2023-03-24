@@ -22,10 +22,10 @@ const Hero = () => {
   return (
     <div className=" border-box bg-base-200 pt-24 pb-16 ">
       <div className="container mx-auto hero ">
-        <div className="hero-content flex-col lg:flex-row-reverse px-10 lg:gap-20 my-6">
+        <div className="hero-content flex-col lg:flex-row-reverse px-5 lg:gap-20 my-6">
           <img
             src={recipe.strMealThumb}
-            className="w-[350px] h-[350px] rounded-full shadow-2xl object-cover mx-6"
+            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full shadow-2xl object-cover mx-6"
             loading="lazy"
           />
           <div>

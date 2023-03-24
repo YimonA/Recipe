@@ -34,7 +34,7 @@ const Meal = () => {
         <h3 className=" text-xl my-14">Loading</h3>
       </div>
 
-      <div className=" flex flex-wrap gap-10 justify-center align-center pb-20 pt-24">
+      <div className=" flex flex-wrap gap-10 justify-center align-center pb-20 pt-24 h-full">
         {products?.map((product) => {
           return (
             <Card

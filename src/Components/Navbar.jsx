@@ -5,6 +5,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import Contact from "./Contact";
 import Meal from "./Meal";
 import About from "./About";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
@@ -16,8 +17,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className=' container mx-auto'>
-      <div className="navbar md:px-24 -0 bg-indigo-100 rounded-lg">
+    <div className=" container mx-auto">
+      <div className="navbar md:px-24 bg-indigo-100 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -40,56 +41,52 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 "
             >
-              <li className="">
-              <NavLink to={"/"} >
-                Home
+              <li >
+                <NavLink to={"/"}>Home</NavLink>
+              </li>
+              <li >
+                <NavLink to={"/meal"} element={<Meal />}>
+                  Recipe
                 </NavLink>
               </li>
-              <li>
-              <NavLink to={"/meal"} element={<Meal/>}>
-                Recipe
+
+              <li >
+                <NavLink to={"/about"} element={<About />}>
+                  About
                 </NavLink>
               </li>
-              
-              <li>
-              <NavLink to={"/about"} element={<About/>}>
-                About
-                </NavLink>
-              </li>
-              
-              <li>
-              <NavLink to={"/contact"} element={<Contact/>}>
-                Contact
+
+              <li >
+                <NavLink to={"/contact"} element={<Contact />}>
+                  Contact
                 </NavLink>
               </li>
             </ul>
           </div>
           <Link to={"/"}>
-            <CiForkAndKnife className=" text-3xl text-black font-extrabold"></CiForkAndKnife>
+            <h1 className=" text-3xl text-black font-extrabold ">
+            <CiForkAndKnife ></CiForkAndKnife>
+            </h1>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <NavLink to="/">
-
-              Home
+            <li >
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li >
+              <NavLink to={"/meal"} element={<Meal />}>
+                Recipe
               </NavLink>
             </li>
-            <li>
-              <NavLink to={"/meal"} element={<Meal/>}>
-
-              Recipe
+            <li >
+              <NavLink to={"/about"} element={<About />}>
+                About
               </NavLink>
             </li>
-            <li>
-            <NavLink to={"/about"} element={<About/>}>
-              About
-              </NavLink>
-            </li>
-            <li>
-            <NavLink to={"/contact"} element={<Contact/>}>
-              Contact
+            <li >
+              <NavLink to={"/contact"} element={<Contact />}>
+                Contact
               </NavLink>
             </li>
           </ul>
